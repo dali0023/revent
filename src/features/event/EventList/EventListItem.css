@@ -1,0 +1,12 @@
+.event_icon {
+  background-color: white;
+  padding: 5px 0px 7px 10px;
+  font-size: 13px;
+}
+.event_item_footer{
+    background-color: white;
+}
+.event_item_button{
+    text-align: right;
+    float: right;
+}
