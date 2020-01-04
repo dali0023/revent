@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Nav, Button, Image, ListGroup } from "react-bootstrap";
+import { Card, Nav, Button, Image} from "react-bootstrap";
 import { FaClock, FaMapMarker } from "react-icons/fa";
 import classes from "./EventListItem.css";
 import EventListAttendence from "./EventListAttendence";
@@ -37,7 +37,7 @@ class EventListItem extends Component {
             style={{ backgroundColor: "rgb(243, 246, 249)", padding: 0 }}
           >
             <Nav defaultActiveKey='/home' as='ul'>
-              {this.props.event.attendence.map(attend => (
+              {this.props.event.attendence && this.props.event.attendence.map(attend => (
                 <EventListAttendence key={attend.id} attend={attend}/>
               ))}
             </Nav>

@@ -4,6 +4,7 @@ import EventList from "../EventList/EventList";
 import EventForm from "../EventForm/EventForm";
 import classes from "./EventDashboard.css";
 import eventsFromDashboard from "./Data";
+import cuid from 'cuid'
 class EventDashboard extends Component {
   state = {
     events: eventsFromDashboard,
@@ -15,6 +16,15 @@ class EventDashboard extends Component {
       isEventFromOpen: !toggleValue
     });
   };
+CreateEventHandler = (newEvent)=>{
+  newEvent.id = cuid();
+  newEvent.hostPhotoURL ='https://randomuser.me/api/portraits/med/men/76.jpg'
+  this.setState({
+    events:[...this.state.events, newEvent],
+    isEventFromOpen: false
+  })
+}
+
   render() {
     return (
       <Container className={classes.event_dashboard}>
@@ -32,7 +42,7 @@ class EventDashboard extends Component {
               Create Event
             </Button>
             {this.state.isEventFromOpen && (
-              <EventForm cancelFrom={this.handleIsOpenToggle} />
+              <EventForm CreateEvent={this.CreateEventHandler} cancelFrom={this.handleIsOpenToggle} />
             )}
           </Col>
         </Row>
