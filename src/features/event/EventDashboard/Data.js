@@ -2,7 +2,7 @@ const eventsFromDashboard = [
     {
       id: "1",
       title: "which would create invalid markup by default",
-      date: "2019-05-29T11:00:00+00:00",
+      date: "2019-05-29",
       hostedBy: "Tanzina Akter",
       venue: "Manik Miah Avenue, Dhaka",
       hostPhotoURL: "https://randomuser.me/api/portraits/women/20.jpg",
@@ -25,11 +25,12 @@ const eventsFromDashboard = [
     {
       id: "2",
       title: "Lorem ipsum dolor sit amet consectetur adipisicing",
-      date: "2018-03-27T11:00:00+00:00",
+      date: "2018-03-27",
       hostedBy: "Nazmul Hasan",
       hostPhotoURL: "https://randomuser.me/api/portraits/med/men/75.jpg",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
       city: "Ottawa, Canada",
+      venue: "Jonson Avenue, Ottawa",
       category: "culture",
       attendence: [
         {

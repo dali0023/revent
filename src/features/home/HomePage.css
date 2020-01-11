@@ -1,0 +1,14 @@
+.mainArea {
+  padding: 0;
+  margin: 0 !important;
+  background-color: rgb(1, 117, 176);
+}
+.jumbo {
+  background-color: rgb(1, 117, 176);
+  margin: auto;
+  width: 50%;
+  padding-top: 19%;
+  padding-bottom: 19%;
+  text-align: center;
+  color: white;
+}
