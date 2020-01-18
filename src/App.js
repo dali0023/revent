@@ -9,6 +9,7 @@ import PeopleDashboard from "./features/user/PeopleDashboard/PeopleDashboard";
 import UserDetailedPage from "./features/user/UserDetailed/UserDetailedPage";
 import SettingsDashboard from "./features/user/Settings/SettingsDashboard";
 import EventForm from "./features/event/EventForm/EventForm";
+import TestComponent from "./features/testArea/TestComponent";
 function App() {
   return (
     <>
@@ -38,6 +39,10 @@ function App() {
               <Route
                 path='/setting'
                 component={props => <SettingsDashboard {...props} />}
+              />
+              <Route
+                path='/test'
+                component={props => <TestComponent {...props} />}
               />
               <Route
                 path='/create-event'

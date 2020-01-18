@@ -35,6 +35,9 @@ class NavBar extends Component {
             <Nav.Link as={NavLink} to='/people' name='People'>
               people
             </Nav.Link>
+            <Nav.Link as={NavLink} to='/test' name='Test'>
+              Test
+            </Nav.Link>
             <Nav.Link as={NavLink} to='/create-event'>
               Create Event
             </Nav.Link>
@@ -47,3 +50,4 @@ class NavBar extends Component {
 }
 
 export default  withRouter(NavBar);
+// export default NavBar;
